@@ -17,7 +17,7 @@ This directory contains code and resources for deploying models on ESP-EYE, ESP3
 * **`stm/`**
 
   * Contains the code and configuration files necessary to run the models on STM-based platforms.
-  * Deployment is performed using mbed version 6.7.
+  * Deployment is performed using Mbed OS version 6.7.
 
 #### Deployment Configuration
 
@@ -31,9 +31,21 @@ This directory contains code and resources for deploying models on ESP-EYE, ESP3
 **To deploy on ESP32-S3:**
 
 * Enable external SDRAM and allow the `.bss` section to be placed in it.
-
 * SDRAM should be configured in **Octal Mode**.
-
 * Set the CPU clock speed to **240 MHz**.
-
 * Enable custom partitioning, especially required for the MobileNet model.
+
+**To deploy on STM (e.g., DISCO\_F746NG):**
+
+* Refer to the official Mbed OS setup guide: [Mbed OS 6.7 Installation and Setup](https://os.mbed.com/docs/mbed-os/v6.7/build-tools/install-and-set-up.html)
+
+* Compile with the following command:
+
+  ```bash
+  mbed compile -m DISCO_F746NG -t GCC_ARM
+  ```
+
+* Additional options:
+
+  * `-f` : Flash the compiled binary directly to the device
+  * `--clean` : Start from a clean build
