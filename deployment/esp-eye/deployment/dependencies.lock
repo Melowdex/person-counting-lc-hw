@@ -1,0 +1,33 @@
+dependencies:
+  esp-tflite-micro:
+    dependencies:
+    - name: espressif/esp-nn
+      pre_release: true
+      version: ^1.0.0-rc1
+    - name: idf
+      version: '>=4.2'
+    source:
+      path: C:\Users\xande\Documents\kuleuven\MP\MP-person-counting\MP-Person-counting-on-low-cost-HW\deployment\esp-eye\components\esp-tflite-micro
+      type: local
+    version: 1.3.1
+  espressif/esp-nn:
+    component_hash: 5d99b2991c109211ea5722bae481bbe243dc7e064d9ffd9e5dfa58aba7be9d88
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=4.2'
+    source:
+      pre_release: true
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 1.1.1
+  idf:
+    source:
+      type: idf
+    version: 5.3.1
+direct_dependencies:
+- esp-tflite-micro
+- idf
+manifest_hash: 2861bdc8e51430e74892f068bd89510343afee6a33273559afbc03d83a55bdff
+target: esp32s3
+version: 2.0.0
