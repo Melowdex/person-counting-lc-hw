@@ -1,0 +1,1 @@
+This is the official github repository from the paper "Person counting on low-cos embedded hardware" by Xander Verberckt.

@@ -1,0 +1,7 @@
+path: E:\KULeuven\MP\dataset
+train: train/images
+val: val/images
+test: test/images
+
+nc: 1  # number of classes
+names: ['person']  # class names
