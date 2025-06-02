@@ -1,0 +1,9 @@
+tensorflow
+pandas 
+PyYAML 
+numpy
+matplotlib
+seaborn
+opencv-python
+pillow
+ipykernel

@@ -1,0 +1,90 @@
+out_m/fomo_a035_r96_0:
+  loss: 0.16681347787380219
+  params: 20754
+out_m/fomo_a035_r128_0:
+  loss: 0.11190354824066162
+  params: 20754
+out_m/fomo_a035_r224_0:
+  loss: 0.05104606971144676
+  params: 20754
+out_m/fomo_a075_r96_0:
+  loss: 0.1521058827638626
+  params: 53634
+out_m/fomo_a075_r128_0:
+  loss: 0.09264899790287018
+  params: 53634
+out_m/fomo_a075_r224_0:
+  loss: 0.04291384294629097
+  params: 53634
+out_m/fomo_a035_r96_1:
+  loss: 0.15043392777442932
+  params: 20754
+out_m/fomo_a035_r128_1:
+  loss: 0.10470280051231384
+  params: 20754
+out_m/fomo_a035_r224_1:
+  loss: 0.04604019224643707
+  params: 20754
+out_m/fomo_a075_r96_1:
+  loss: 0.1432763636112213
+  params: 53634
+out_m/fomo_a075_r128_1:
+  loss: 0.10332108289003372
+  params: 53634
+out_m/fomo_a075_r224_1:
+  loss: 0.03947383537888527
+  params: 53634
+out_m/fomo_a035_r96_2:
+  loss: 0.147762730717659
+  params: 20754
+out_m/fomo_a035_r128_2:
+  loss: 0.10269883275032043
+  params: 20754
+out_m/fomo_a035_r224_2:
+  loss: 0.04334461688995361
+  params: 20754
+out_m/fomo_a075_r96_2:
+  loss: 0.15391863882541656
+  params: 53634
+out_m/fomo_a075_r128_2:
+  loss: 0.15441884100437164
+  params: 53634
+out_m/fomo_a075_r224_2:
+  loss: 0.03928001597523689
+  params: 53634
+out_m/fomo_a035_r96_3:
+  loss: 0.14792576432228088
+  params: 20754
+out_m/fomo_a035_r128_3:
+  loss: 0.10250237584114075
+  params: 20754
+out_m/fomo_a035_r224_3:
+  loss: 0.043083664029836655
+  params: 20754
+out_m/fomo_a075_r96_3:
+  loss: 0.16294237971305847
+  params: 53634
+out_m/fomo_a075_r128_3:
+  loss: 0.15840117633342743
+  params: 53634
+out_m/fomo_a075_r224_3:
+  loss: 0.03933250531554222
+  params: 53634
+out_m/fomo_a035_r96_4:
+  loss: 0.14790575206279755
+  params: 20754
+out_m/fomo_a035_r128_4:
+  loss: 0.10241638123989105
+  params: 20754
+out_m/fomo_a035_r224_4:
+  loss: 0.043066807091236115
+  params: 20754
+out_m/fomo_a075_r96_4:
+  loss: 0.16271089017391205
+  params: 53634
+out_m/fomo_a075_r128_4:
+  loss: 0.15841282904148102
+  params: 53634
+out_m/fomo_a075_r224_4:
+  loss: 0.03932863846421242
+  params: 53634

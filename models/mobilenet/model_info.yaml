@@ -1,0 +1,3228 @@
+v3_d512_256_r96:
+  model_name: functional_13
+  input_shape:
+  - null
+  - 96
+  - 96
+  - 3
+  output_shape:
+  - null
+  - 1
+  num_layers: 104
+  trainable_params: 946905
+  non_trainable_params: 10960
+  total_params: 957865
+  size:
+    kilobytes: 3741.66
+    megabytes: 3.65
+  layers:
+  - name: input_layer_3
+    class_name: InputLayer
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: rescaling_3
+    class_name: Rescaling
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: conv
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 432
+  - name: conv_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 64
+  - name: re_lu_69
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_depthwise_pad
+    class_name: ZeroPadding2D
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 144
+  - name: expanded_conv_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 64
+  - name: re_lu_70
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 256
+  - name: expanded_conv_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 64
+  - name: expanded_conv_1_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 1152
+  - name: expanded_conv_1_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 288
+  - name: re_lu_71
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_1_depthwise_pad
+    class_name: ZeroPadding2D
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_1_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 648
+  - name: expanded_conv_1_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 288
+  - name: re_lu_72
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_1_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 1728
+  - name: expanded_conv_1_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 96
+  - name: expanded_conv_2_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 2112
+  - name: expanded_conv_2_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 352
+  - name: re_lu_73
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_2_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 792
+  - name: expanded_conv_2_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 352
+  - name: re_lu_74
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_2_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 2112
+  - name: expanded_conv_2_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 96
+  - name: expanded_conv_2_add
+    class_name: Add
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_3_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 2304
+  - name: expanded_conv_3_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 384
+  - name: re_lu_75
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_3_depthwise_pad
+    class_name: ZeroPadding2D
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_3_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 864
+  - name: expanded_conv_3_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 384
+  - name: re_lu_76
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_3_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 3840
+  - name: expanded_conv_3_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 160
+  - name: expanded_conv_4_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 9600
+  - name: expanded_conv_4_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 960
+  - name: re_lu_77
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_4_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 2160
+  - name: expanded_conv_4_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 960
+  - name: re_lu_78
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_4_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 9600
+  - name: expanded_conv_4_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 160
+  - name: expanded_conv_4_add
+    class_name: Add
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_5_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 9600
+  - name: expanded_conv_5_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 960
+  - name: re_lu_79
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_5_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 2160
+  - name: expanded_conv_5_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 960
+  - name: re_lu_80
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_5_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 9600
+  - name: expanded_conv_5_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 160
+  - name: expanded_conv_5_add
+    class_name: Add
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_6_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 4800
+  - name: expanded_conv_6_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 480
+  - name: re_lu_81
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_6_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 1080
+  - name: expanded_conv_6_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 480
+  - name: re_lu_82
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_6_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 5760
+  - name: expanded_conv_6_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 192
+  - name: expanded_conv_7_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 6912
+  - name: expanded_conv_7_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 576
+  - name: re_lu_83
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_7_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 1296
+  - name: expanded_conv_7_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 576
+  - name: re_lu_84
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_7_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 6912
+  - name: expanded_conv_7_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 192
+  - name: expanded_conv_7_add
+    class_name: Add
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_8_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 13824
+  - name: expanded_conv_8_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 1152
+  - name: re_lu_85
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_8_depthwise_pad
+    class_name: ZeroPadding2D
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_8_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 2592
+  - name: expanded_conv_8_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 1152
+  - name: re_lu_86
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_8_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 27648
+  - name: expanded_conv_8_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 384
+  - name: expanded_conv_9_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 55296
+  - name: expanded_conv_9_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 2304
+  - name: re_lu_87
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_9_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 5184
+  - name: expanded_conv_9_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 2304
+  - name: re_lu_88
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_9_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 55296
+  - name: expanded_conv_9_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 384
+  - name: expanded_conv_9_add
+    class_name: Add
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_10_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 55296
+  - name: expanded_conv_10_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 2304
+  - name: re_lu_89
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_10_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 5184
+  - name: expanded_conv_10_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 2304
+  - name: re_lu_90
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_10_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 55296
+  - name: expanded_conv_10_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 384
+  - name: expanded_conv_10_add
+    class_name: Add
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: flatten_6
+    class_name: Flatten
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: dense_18
+    class_name: Dense
+    output_shape: null
+    trainable: true
+    num_params: 442880
+  - name: dense_19
+    class_name: Dense
+    output_shape: null
+    trainable: true
+    num_params: 131328
+  - name: dense_20
+    class_name: Dense
+    output_shape: null
+    trainable: true
+    num_params: 257
+v3_d512_256_r128:
+  model_name: functional_15
+  input_shape:
+  - null
+  - 128
+  - 128
+  - 3
+  output_shape:
+  - null
+  - 1
+  num_layers: 104
+  trainable_params: 1290969
+  non_trainable_params: 10960
+  total_params: 1301929
+  size:
+    kilobytes: 5085.66
+    megabytes: 4.97
+  layers:
+  - name: input_layer_4
+    class_name: InputLayer
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: rescaling_4
+    class_name: Rescaling
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: conv
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 432
+  - name: conv_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 64
+  - name: re_lu_92
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_depthwise_pad
+    class_name: ZeroPadding2D
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 144
+  - name: expanded_conv_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 64
+  - name: re_lu_93
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 256
+  - name: expanded_conv_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 64
+  - name: expanded_conv_1_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 1152
+  - name: expanded_conv_1_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 288
+  - name: re_lu_94
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_1_depthwise_pad
+    class_name: ZeroPadding2D
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_1_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 648
+  - name: expanded_conv_1_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 288
+  - name: re_lu_95
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_1_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 1728
+  - name: expanded_conv_1_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 96
+  - name: expanded_conv_2_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 2112
+  - name: expanded_conv_2_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 352
+  - name: re_lu_96
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_2_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 792
+  - name: expanded_conv_2_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 352
+  - name: re_lu_97
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_2_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 2112
+  - name: expanded_conv_2_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 96
+  - name: expanded_conv_2_add
+    class_name: Add
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_3_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 2304
+  - name: expanded_conv_3_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 384
+  - name: re_lu_98
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_3_depthwise_pad
+    class_name: ZeroPadding2D
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_3_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 864
+  - name: expanded_conv_3_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 384
+  - name: re_lu_99
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_3_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 3840
+  - name: expanded_conv_3_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 160
+  - name: expanded_conv_4_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 9600
+  - name: expanded_conv_4_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 960
+  - name: re_lu_100
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_4_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 2160
+  - name: expanded_conv_4_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 960
+  - name: re_lu_101
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_4_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 9600
+  - name: expanded_conv_4_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 160
+  - name: expanded_conv_4_add
+    class_name: Add
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_5_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 9600
+  - name: expanded_conv_5_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 960
+  - name: re_lu_102
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_5_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 2160
+  - name: expanded_conv_5_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 960
+  - name: re_lu_103
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_5_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 9600
+  - name: expanded_conv_5_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 160
+  - name: expanded_conv_5_add
+    class_name: Add
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_6_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 4800
+  - name: expanded_conv_6_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 480
+  - name: re_lu_104
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_6_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 1080
+  - name: expanded_conv_6_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 480
+  - name: re_lu_105
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_6_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 5760
+  - name: expanded_conv_6_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 192
+  - name: expanded_conv_7_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 6912
+  - name: expanded_conv_7_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 576
+  - name: re_lu_106
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_7_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 1296
+  - name: expanded_conv_7_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 576
+  - name: re_lu_107
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_7_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 6912
+  - name: expanded_conv_7_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 192
+  - name: expanded_conv_7_add
+    class_name: Add
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_8_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 13824
+  - name: expanded_conv_8_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 1152
+  - name: re_lu_108
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_8_depthwise_pad
+    class_name: ZeroPadding2D
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_8_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 2592
+  - name: expanded_conv_8_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 1152
+  - name: re_lu_109
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_8_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 27648
+  - name: expanded_conv_8_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 384
+  - name: expanded_conv_9_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 55296
+  - name: expanded_conv_9_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 2304
+  - name: re_lu_110
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_9_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 5184
+  - name: expanded_conv_9_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 2304
+  - name: re_lu_111
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_9_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 55296
+  - name: expanded_conv_9_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 384
+  - name: expanded_conv_9_add
+    class_name: Add
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_10_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 55296
+  - name: expanded_conv_10_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 2304
+  - name: re_lu_112
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_10_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 5184
+  - name: expanded_conv_10_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 2304
+  - name: re_lu_113
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_10_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 55296
+  - name: expanded_conv_10_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 384
+  - name: expanded_conv_10_add
+    class_name: Add
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: flatten_7
+    class_name: Flatten
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: dense_21
+    class_name: Dense
+    output_shape: null
+    trainable: true
+    num_params: 786944
+  - name: dense_22
+    class_name: Dense
+    output_shape: null
+    trainable: true
+    num_params: 131328
+  - name: dense_23
+    class_name: Dense
+    output_shape: null
+    trainable: true
+    num_params: 257
+v3_d512_256_r224:
+  model_name: functional_17
+  input_shape:
+  - null
+  - 224
+  - 224
+  - 3
+  output_shape:
+  - null
+  - 1
+  num_layers: 104
+  trainable_params: 2912985
+  non_trainable_params: 10960
+  total_params: 2923945
+  size:
+    kilobytes: 11421.66
+    megabytes: 11.15
+  layers:
+  - name: input_layer_5
+    class_name: InputLayer
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: rescaling_5
+    class_name: Rescaling
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: conv
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 432
+  - name: conv_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 64
+  - name: re_lu_115
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_depthwise_pad
+    class_name: ZeroPadding2D
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 144
+  - name: expanded_conv_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 64
+  - name: re_lu_116
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 256
+  - name: expanded_conv_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 64
+  - name: expanded_conv_1_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 1152
+  - name: expanded_conv_1_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 288
+  - name: re_lu_117
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_1_depthwise_pad
+    class_name: ZeroPadding2D
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_1_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 648
+  - name: expanded_conv_1_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 288
+  - name: re_lu_118
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_1_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 1728
+  - name: expanded_conv_1_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 96
+  - name: expanded_conv_2_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 2112
+  - name: expanded_conv_2_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 352
+  - name: re_lu_119
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_2_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 792
+  - name: expanded_conv_2_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 352
+  - name: re_lu_120
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_2_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 2112
+  - name: expanded_conv_2_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 96
+  - name: expanded_conv_2_add
+    class_name: Add
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_3_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 2304
+  - name: expanded_conv_3_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 384
+  - name: re_lu_121
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_3_depthwise_pad
+    class_name: ZeroPadding2D
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_3_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 864
+  - name: expanded_conv_3_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 384
+  - name: re_lu_122
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_3_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 3840
+  - name: expanded_conv_3_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 160
+  - name: expanded_conv_4_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 9600
+  - name: expanded_conv_4_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 960
+  - name: re_lu_123
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_4_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 2160
+  - name: expanded_conv_4_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 960
+  - name: re_lu_124
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_4_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 9600
+  - name: expanded_conv_4_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 160
+  - name: expanded_conv_4_add
+    class_name: Add
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_5_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 9600
+  - name: expanded_conv_5_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 960
+  - name: re_lu_125
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_5_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 2160
+  - name: expanded_conv_5_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 960
+  - name: re_lu_126
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_5_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 9600
+  - name: expanded_conv_5_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 160
+  - name: expanded_conv_5_add
+    class_name: Add
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_6_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 4800
+  - name: expanded_conv_6_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 480
+  - name: re_lu_127
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_6_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 1080
+  - name: expanded_conv_6_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 480
+  - name: re_lu_128
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_6_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 5760
+  - name: expanded_conv_6_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 192
+  - name: expanded_conv_7_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 6912
+  - name: expanded_conv_7_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 576
+  - name: re_lu_129
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_7_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 1296
+  - name: expanded_conv_7_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 576
+  - name: re_lu_130
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_7_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 6912
+  - name: expanded_conv_7_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 192
+  - name: expanded_conv_7_add
+    class_name: Add
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_8_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 13824
+  - name: expanded_conv_8_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 1152
+  - name: re_lu_131
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_8_depthwise_pad
+    class_name: ZeroPadding2D
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_8_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 2592
+  - name: expanded_conv_8_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 1152
+  - name: re_lu_132
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_8_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 27648
+  - name: expanded_conv_8_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 384
+  - name: expanded_conv_9_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 55296
+  - name: expanded_conv_9_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 2304
+  - name: re_lu_133
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_9_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 5184
+  - name: expanded_conv_9_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 2304
+  - name: re_lu_134
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_9_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 55296
+  - name: expanded_conv_9_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 384
+  - name: expanded_conv_9_add
+    class_name: Add
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_10_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 55296
+  - name: expanded_conv_10_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 2304
+  - name: re_lu_135
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_10_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 5184
+  - name: expanded_conv_10_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 2304
+  - name: re_lu_136
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_10_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 55296
+  - name: expanded_conv_10_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 384
+  - name: expanded_conv_10_add
+    class_name: Add
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: flatten_8
+    class_name: Flatten
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: dense_24
+    class_name: Dense
+    output_shape: null
+    trainable: true
+    num_params: 2408960
+  - name: dense_25
+    class_name: Dense
+    output_shape: null
+    trainable: true
+    num_params: 131328
+  - name: dense_26
+    class_name: Dense
+    output_shape: null
+    trainable: true
+    num_params: 257
+v3_d256_128_r96:
+  model_name: functional_19
+  input_shape:
+  - null
+  - 96
+  - 96
+  - 3
+  output_shape:
+  - null
+  - 1
+  num_layers: 104
+  trainable_params: 626905
+  non_trainable_params: 10960
+  total_params: 637865
+  size:
+    kilobytes: 2491.66
+    megabytes: 2.43
+  layers:
+  - name: input_layer_3
+    class_name: InputLayer
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: rescaling_3
+    class_name: Rescaling
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: conv
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 432
+  - name: conv_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 64
+  - name: re_lu_69
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_depthwise_pad
+    class_name: ZeroPadding2D
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 144
+  - name: expanded_conv_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 64
+  - name: re_lu_70
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 256
+  - name: expanded_conv_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 64
+  - name: expanded_conv_1_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 1152
+  - name: expanded_conv_1_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 288
+  - name: re_lu_71
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_1_depthwise_pad
+    class_name: ZeroPadding2D
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_1_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 648
+  - name: expanded_conv_1_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 288
+  - name: re_lu_72
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_1_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 1728
+  - name: expanded_conv_1_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 96
+  - name: expanded_conv_2_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 2112
+  - name: expanded_conv_2_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 352
+  - name: re_lu_73
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_2_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 792
+  - name: expanded_conv_2_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 352
+  - name: re_lu_74
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_2_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 2112
+  - name: expanded_conv_2_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 96
+  - name: expanded_conv_2_add
+    class_name: Add
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_3_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 2304
+  - name: expanded_conv_3_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 384
+  - name: re_lu_75
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_3_depthwise_pad
+    class_name: ZeroPadding2D
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_3_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 864
+  - name: expanded_conv_3_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 384
+  - name: re_lu_76
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_3_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 3840
+  - name: expanded_conv_3_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 160
+  - name: expanded_conv_4_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 9600
+  - name: expanded_conv_4_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 960
+  - name: re_lu_77
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_4_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 2160
+  - name: expanded_conv_4_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 960
+  - name: re_lu_78
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_4_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 9600
+  - name: expanded_conv_4_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 160
+  - name: expanded_conv_4_add
+    class_name: Add
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_5_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 9600
+  - name: expanded_conv_5_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 960
+  - name: re_lu_79
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_5_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 2160
+  - name: expanded_conv_5_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 960
+  - name: re_lu_80
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_5_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 9600
+  - name: expanded_conv_5_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 160
+  - name: expanded_conv_5_add
+    class_name: Add
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_6_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 4800
+  - name: expanded_conv_6_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 480
+  - name: re_lu_81
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_6_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 1080
+  - name: expanded_conv_6_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 480
+  - name: re_lu_82
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_6_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 5760
+  - name: expanded_conv_6_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 192
+  - name: expanded_conv_7_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 6912
+  - name: expanded_conv_7_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 576
+  - name: re_lu_83
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_7_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 1296
+  - name: expanded_conv_7_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 576
+  - name: re_lu_84
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_7_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 6912
+  - name: expanded_conv_7_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 192
+  - name: expanded_conv_7_add
+    class_name: Add
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_8_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 13824
+  - name: expanded_conv_8_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 1152
+  - name: re_lu_85
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_8_depthwise_pad
+    class_name: ZeroPadding2D
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_8_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 2592
+  - name: expanded_conv_8_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 1152
+  - name: re_lu_86
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_8_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 27648
+  - name: expanded_conv_8_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 384
+  - name: expanded_conv_9_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 55296
+  - name: expanded_conv_9_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 2304
+  - name: re_lu_87
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_9_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 5184
+  - name: expanded_conv_9_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 2304
+  - name: re_lu_88
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_9_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 55296
+  - name: expanded_conv_9_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 384
+  - name: expanded_conv_9_add
+    class_name: Add
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_10_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 55296
+  - name: expanded_conv_10_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 2304
+  - name: re_lu_89
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_10_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 5184
+  - name: expanded_conv_10_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 2304
+  - name: re_lu_90
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_10_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 55296
+  - name: expanded_conv_10_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 384
+  - name: expanded_conv_10_add
+    class_name: Add
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: flatten_9
+    class_name: Flatten
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: dense_27
+    class_name: Dense
+    output_shape: null
+    trainable: true
+    num_params: 221440
+  - name: dense_28
+    class_name: Dense
+    output_shape: null
+    trainable: true
+    num_params: 32896
+  - name: dense_29
+    class_name: Dense
+    output_shape: null
+    trainable: true
+    num_params: 129
+v3_d256_128_r128:
+  model_name: functional_21
+  input_shape:
+  - null
+  - 128
+  - 128
+  - 3
+  output_shape:
+  - null
+  - 1
+  num_layers: 104
+  trainable_params: 798937
+  non_trainable_params: 10960
+  total_params: 809897
+  size:
+    kilobytes: 3163.66
+    megabytes: 3.09
+  layers:
+  - name: input_layer_4
+    class_name: InputLayer
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: rescaling_4
+    class_name: Rescaling
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: conv
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 432
+  - name: conv_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 64
+  - name: re_lu_92
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_depthwise_pad
+    class_name: ZeroPadding2D
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 144
+  - name: expanded_conv_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 64
+  - name: re_lu_93
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 256
+  - name: expanded_conv_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 64
+  - name: expanded_conv_1_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 1152
+  - name: expanded_conv_1_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 288
+  - name: re_lu_94
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_1_depthwise_pad
+    class_name: ZeroPadding2D
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_1_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 648
+  - name: expanded_conv_1_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 288
+  - name: re_lu_95
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_1_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 1728
+  - name: expanded_conv_1_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 96
+  - name: expanded_conv_2_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 2112
+  - name: expanded_conv_2_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 352
+  - name: re_lu_96
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_2_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 792
+  - name: expanded_conv_2_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 352
+  - name: re_lu_97
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_2_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 2112
+  - name: expanded_conv_2_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 96
+  - name: expanded_conv_2_add
+    class_name: Add
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_3_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 2304
+  - name: expanded_conv_3_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 384
+  - name: re_lu_98
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_3_depthwise_pad
+    class_name: ZeroPadding2D
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_3_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 864
+  - name: expanded_conv_3_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 384
+  - name: re_lu_99
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_3_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 3840
+  - name: expanded_conv_3_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 160
+  - name: expanded_conv_4_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 9600
+  - name: expanded_conv_4_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 960
+  - name: re_lu_100
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_4_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 2160
+  - name: expanded_conv_4_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 960
+  - name: re_lu_101
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_4_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 9600
+  - name: expanded_conv_4_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 160
+  - name: expanded_conv_4_add
+    class_name: Add
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_5_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 9600
+  - name: expanded_conv_5_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 960
+  - name: re_lu_102
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_5_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 2160
+  - name: expanded_conv_5_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 960
+  - name: re_lu_103
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_5_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 9600
+  - name: expanded_conv_5_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 160
+  - name: expanded_conv_5_add
+    class_name: Add
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_6_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 4800
+  - name: expanded_conv_6_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 480
+  - name: re_lu_104
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_6_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 1080
+  - name: expanded_conv_6_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 480
+  - name: re_lu_105
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_6_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 5760
+  - name: expanded_conv_6_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 192
+  - name: expanded_conv_7_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 6912
+  - name: expanded_conv_7_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 576
+  - name: re_lu_106
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_7_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 1296
+  - name: expanded_conv_7_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 576
+  - name: re_lu_107
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_7_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 6912
+  - name: expanded_conv_7_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 192
+  - name: expanded_conv_7_add
+    class_name: Add
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_8_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 13824
+  - name: expanded_conv_8_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 1152
+  - name: re_lu_108
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_8_depthwise_pad
+    class_name: ZeroPadding2D
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_8_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 2592
+  - name: expanded_conv_8_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 1152
+  - name: re_lu_109
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_8_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 27648
+  - name: expanded_conv_8_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 384
+  - name: expanded_conv_9_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 55296
+  - name: expanded_conv_9_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 2304
+  - name: re_lu_110
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_9_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 5184
+  - name: expanded_conv_9_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 2304
+  - name: re_lu_111
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_9_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 55296
+  - name: expanded_conv_9_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 384
+  - name: expanded_conv_9_add
+    class_name: Add
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_10_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 55296
+  - name: expanded_conv_10_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 2304
+  - name: re_lu_112
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_10_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 5184
+  - name: expanded_conv_10_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 2304
+  - name: re_lu_113
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_10_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 55296
+  - name: expanded_conv_10_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 384
+  - name: expanded_conv_10_add
+    class_name: Add
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: flatten_10
+    class_name: Flatten
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: dense_30
+    class_name: Dense
+    output_shape: null
+    trainable: true
+    num_params: 393472
+  - name: dense_31
+    class_name: Dense
+    output_shape: null
+    trainable: true
+    num_params: 32896
+  - name: dense_32
+    class_name: Dense
+    output_shape: null
+    trainable: true
+    num_params: 129
+v3_d256_128_r224:
+  model_name: functional_23
+  input_shape:
+  - null
+  - 224
+  - 224
+  - 3
+  output_shape:
+  - null
+  - 1
+  num_layers: 104
+  trainable_params: 1609945
+  non_trainable_params: 10960
+  total_params: 1620905
+  size:
+    kilobytes: 6331.66
+    megabytes: 6.18
+  layers:
+  - name: input_layer_5
+    class_name: InputLayer
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: rescaling_5
+    class_name: Rescaling
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: conv
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 432
+  - name: conv_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 64
+  - name: re_lu_115
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_depthwise_pad
+    class_name: ZeroPadding2D
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 144
+  - name: expanded_conv_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 64
+  - name: re_lu_116
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 256
+  - name: expanded_conv_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 64
+  - name: expanded_conv_1_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 1152
+  - name: expanded_conv_1_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 288
+  - name: re_lu_117
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_1_depthwise_pad
+    class_name: ZeroPadding2D
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_1_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 648
+  - name: expanded_conv_1_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 288
+  - name: re_lu_118
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_1_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 1728
+  - name: expanded_conv_1_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 96
+  - name: expanded_conv_2_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 2112
+  - name: expanded_conv_2_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 352
+  - name: re_lu_119
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_2_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 792
+  - name: expanded_conv_2_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 352
+  - name: re_lu_120
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_2_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 2112
+  - name: expanded_conv_2_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 96
+  - name: expanded_conv_2_add
+    class_name: Add
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_3_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 2304
+  - name: expanded_conv_3_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 384
+  - name: re_lu_121
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_3_depthwise_pad
+    class_name: ZeroPadding2D
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_3_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 864
+  - name: expanded_conv_3_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 384
+  - name: re_lu_122
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_3_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 3840
+  - name: expanded_conv_3_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 160
+  - name: expanded_conv_4_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 9600
+  - name: expanded_conv_4_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 960
+  - name: re_lu_123
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_4_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 2160
+  - name: expanded_conv_4_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 960
+  - name: re_lu_124
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_4_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 9600
+  - name: expanded_conv_4_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 160
+  - name: expanded_conv_4_add
+    class_name: Add
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_5_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 9600
+  - name: expanded_conv_5_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 960
+  - name: re_lu_125
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_5_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 2160
+  - name: expanded_conv_5_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 960
+  - name: re_lu_126
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_5_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 9600
+  - name: expanded_conv_5_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 160
+  - name: expanded_conv_5_add
+    class_name: Add
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_6_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 4800
+  - name: expanded_conv_6_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 480
+  - name: re_lu_127
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_6_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 1080
+  - name: expanded_conv_6_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 480
+  - name: re_lu_128
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_6_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 5760
+  - name: expanded_conv_6_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 192
+  - name: expanded_conv_7_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 6912
+  - name: expanded_conv_7_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 576
+  - name: re_lu_129
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_7_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 1296
+  - name: expanded_conv_7_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 576
+  - name: re_lu_130
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_7_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 6912
+  - name: expanded_conv_7_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 192
+  - name: expanded_conv_7_add
+    class_name: Add
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_8_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 13824
+  - name: expanded_conv_8_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 1152
+  - name: re_lu_131
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_8_depthwise_pad
+    class_name: ZeroPadding2D
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_8_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 2592
+  - name: expanded_conv_8_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 1152
+  - name: re_lu_132
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_8_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 27648
+  - name: expanded_conv_8_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 384
+  - name: expanded_conv_9_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 55296
+  - name: expanded_conv_9_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 2304
+  - name: re_lu_133
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_9_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 5184
+  - name: expanded_conv_9_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 2304
+  - name: re_lu_134
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_9_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 55296
+  - name: expanded_conv_9_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 384
+  - name: expanded_conv_9_add
+    class_name: Add
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_10_expand
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 55296
+  - name: expanded_conv_10_expand_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 2304
+  - name: re_lu_135
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_10_depthwise
+    class_name: DepthwiseConv2D
+    output_shape: null
+    trainable: true
+    num_params: 5184
+  - name: expanded_conv_10_depthwise_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 2304
+  - name: re_lu_136
+    class_name: ReLU
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: expanded_conv_10_project
+    class_name: Conv2D
+    output_shape: null
+    trainable: true
+    num_params: 55296
+  - name: expanded_conv_10_project_bn
+    class_name: BatchNormalization
+    output_shape: null
+    trainable: true
+    num_params: 384
+  - name: expanded_conv_10_add
+    class_name: Add
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: flatten_11
+    class_name: Flatten
+    output_shape: null
+    trainable: true
+    num_params: 0
+  - name: dense_33
+    class_name: Dense
+    output_shape: null
+    trainable: true
+    num_params: 1204480
+  - name: dense_34
+    class_name: Dense
+    output_shape: null
+    trainable: true
+    num_params: 32896
+  - name: dense_35
+    class_name: Dense
+    output_shape: null
+    trainable: true
+    num_params: 129

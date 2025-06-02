@@ -1,0 +1,8 @@
+.venv
+dataset/hc/train/labels_*
+dataset/hc/val/labels_*
+dataset/hc/val/test_show*
+dataset/hc/val/images_person
+dataset/hc/train/images_person
+dataset/loaf
+dataset/fomo_loaf
