@@ -1,6 +1,6 @@
 ### Preparing the Dataset
 
-To train and test FOMO models, you first need to generate FOMO-compatible annotations.
+To train and test models apart from the feature based ones, you first need to generate annotations. These can be generated using the following scripts:
 
 1. **Generate FOMO annotations:**
 
@@ -23,7 +23,7 @@ To train and test FOMO models, you first need to generate FOMO-compatible annota
    If you want to include the LOAF dataset for training or validation:
 
    * Download the dataset (images and annotations) from the official [LOAF website](https://loafisheye.github.io/download.html).
-   * Extract the contents into a folder named `loaf` in your working directory.
+   * Extract the contents into a folder named `loaf` in under this working directory.
    * Make sure to place the annotation files from the `resolution_512` set into the following path:
 
      ```
