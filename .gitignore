@@ -6,3 +6,5 @@ dataset/hc/val/images_person
 dataset/hc/train/images_person
 dataset/loaf
 dataset/fomo_loaf
+
+deployment/stm32/.mbed_67/

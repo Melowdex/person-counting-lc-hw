@@ -1,0 +1,8 @@
+add.cc
+conv.cc
+depthwise_conv.cc
+fully_connected.cc
+mul.cc
+pooling.cc
+softmax.cc
+svdf.cc
