@@ -83,15 +83,14 @@ This directory contains code and resources for deploying models on ESP-EYE, ESP3
 
 **To deploy on STM (e.g., DISCO\_F746NG):**
 
-* A Python virtual environment with Mbed set up is provided as `.mbed_67`.
-
-* If issues occur, refer to the official Mbed OS setup guide: [Mbed OS 6.7 Installation and Setup](https://os.mbed.com/docs/mbed-os/v6.7/build-tools/install-and-set-up.html)
+* Make sure mbed is installed and working, refer to the official Mbed OS setup guide: [Mbed OS 6.7 Installation and Setup](https://os.mbed.com/docs/mbed-os/v6.7/build-tools/install-and-set-up.html)
 
 * Before compiling, run:
 
   ```bash
   mbed deploy
   ```
+  in the root of the project (`stm32/fomo_feature_v67`), the directory that contains a `mbed-os.lib`
 
 * Compile with the following command:
 
