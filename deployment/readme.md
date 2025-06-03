@@ -13,11 +13,57 @@ This directory contains code and resources for deploying models on ESP-EYE, ESP3
 
   * Contains the code and models used on ESP-EYE and ESP32-S3.
   * Deployment is performed using the ESP-IDF framework.
+  * The `main.c` file is the same for each model. Minor changes are needed to switch between models:
+    * using a define in `models/model_name.cpp`, in the directory of deployment, not the common. Ensure only one define is active at a time.
+    * Adjust the input image based on the model name: `r96` or `r128`.
+    * Operation resolver for FOMO models:
 
-* **`stm/`**
+      ```cpp
+      static tflite::MicroMutableOpResolver<4> resolver;
+      resolver.AddConv2D();
+      resolver.AddDepthwiseConv2D();
+      resolver.AddAdd();
+      resolver.AddMean();
+      ```
+    * Operation resolver for MobileNet models:
+
+      ```cpp
+      static tflite::MicroMutableOpResolver<6> resolver;
+      resolver.AddConv2D();
+      resolver.AddDepthwiseConv2D();
+      resolver.AddAdd();
+      resolver.AddMul();
+      resolver.AddFullyConnected();
+      resolver.AddReshape();
+      ```
+
+* **`stm32/`**
 
   * Contains the code and configuration files necessary to run the models on STM-based platforms.
   * Deployment is performed using Mbed OS version 6.7.
+  * The `main.c` file is the same for each model. Minor changes are needed to switch between models:
+    * using a define in `models/model_name.cpp`, in the directory of deployment, not the common. Ensure only one define is active at a time.
+    * Adjust the input image based on the model name: `r96` or `r128`.
+    * Operation resolver for FOMO models:
+
+      ```cpp
+      static tflite::MicroMutableOpResolver<4> resolver;
+      resolver.AddConv2D();
+      resolver.AddDepthwiseConv2D();
+      resolver.AddAdd();
+      resolver.AddMean();
+      ```
+    * Operation resolver for MobileNet models:
+
+      ```cpp
+      static tflite::MicroMutableOpResolver<6> resolver;
+      resolver.AddConv2D();
+      resolver.AddDepthwiseConv2D();
+      resolver.AddAdd();
+      resolver.AddMul();
+      resolver.AddFullyConnected();
+      resolver.AddReshape();
+      ```
 
 #### Deployment Configuration
 
@@ -37,7 +83,15 @@ This directory contains code and resources for deploying models on ESP-EYE, ESP3
 
 **To deploy on STM (e.g., DISCO\_F746NG):**
 
-* Refer to the official Mbed OS setup guide: [Mbed OS 6.7 Installation and Setup](https://os.mbed.com/docs/mbed-os/v6.7/build-tools/install-and-set-up.html)
+* A Python virtual environment with Mbed set up is provided as `.mbed_67`.
+
+* If issues occur, refer to the official Mbed OS setup guide: [Mbed OS 6.7 Installation and Setup](https://os.mbed.com/docs/mbed-os/v6.7/build-tools/install-and-set-up.html)
+
+* Before compiling, run:
+
+  ```bash
+  mbed deploy
+  ```
 
 * Compile with the following command:
 
